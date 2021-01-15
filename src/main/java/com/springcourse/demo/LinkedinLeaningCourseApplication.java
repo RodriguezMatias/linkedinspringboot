@@ -21,38 +21,38 @@ public class LinkedinLeaningCourseApplication {
 		SpringApplication.run(LinkedinLeaningCourseApplication.class, args);
 	}
 	
-	@RestController
-	@RequestMapping("/rooms")
-	public class RoomController{
-		@Autowired
-		private RoomRepository roomRepository;
-		
-		@GetMapping
-		public Iterable<Room> getRooms(){
-			return this.roomRepository.findAll();
-		}
-	}
-	@RestController
-	@RequestMapping("/guest")
-	public class GuestController{
-		@Autowired
-		private GuestRepository guestRepository;
-		
-		@GetMapping
-		public Iterable<Guest> getGuest(){
-			return this.guestRepository.findAll();
-		}
-	}
-	@RestController
-	@RequestMapping("/reservation")
-	public class ReservationController{
-		@Autowired
-		private ReservationRepository reservationRepository;
-		
-		@GetMapping
-		public Iterable<Reservation> getReservation(){
-			return this.reservationRepository.findAll();
-		}
-	}
+//	@RestController
+//	@RequestMapping("/rooms")
+//	public class RoomController{
+//		@Autowired
+//		private RoomRepository roomRepository;
+//		
+//		@GetMapping
+//		public Iterable<Room> getRooms(){
+//			return this.roomRepository.findAll();
+//		}
+//	}
+//	@RestController
+//	@RequestMapping("/guest")
+//	public class GuestController{
+//		@Autowired
+//		private GuestRepository guestRepository;
+//		
+//		@GetMapping
+//		public Iterable<Guest> getGuest(){
+//			return this.guestRepository.findAll();
+//		}
+//	}
+//	@RestController
+//	@RequestMapping("/reservation")
+//	public class ReservationController{
+//		@Autowired
+//		private ReservationRepository reservationRepository;
+//		
+//		@GetMapping
+//		public Iterable<Reservation> getReservation(){
+//			return this.reservationRepository.findAll();
+//		}
+//	}
 
 }

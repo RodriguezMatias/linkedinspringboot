@@ -19,13 +19,13 @@ public class Reservation {
 	private long reservationID;
 	
 	@Column (name="ROOM_ID")
-	private Integer roomName;
+	private Long roomId;
 	
 	@Column (name="GUEST_ID")
-	private Integer guestId;
+	private Long guestId;
 	
 	@Column (name="RES_DATE")
-	private Date resDate;
+	private Date reservationDate;;
 
 	public long getReservationID() {
 		return reservationID;
@@ -35,29 +35,35 @@ public class Reservation {
 		this.reservationID = reservationID;
 	}
 
-	public Integer getRoomName() {
-		return roomName;
+	public Long getRoomId() {
+		return roomId;
 	}
 
-	public void setRoomName(Integer roomName) {
-		this.roomName = roomName;
+	public void setRoomName(Long roomName) {
+		this.roomId = roomName;
 	}
 
-	public Integer getGuestId() {
+	public Long getGuestId() {
 		return guestId;
 	}
 
-	public void setGuestId(Integer guestId) {
+	public void setGuestId(Long guestId) {
 		this.guestId = guestId;
 	}
 
-	public Date getResDate() {
-		return resDate;
+	public Date getReservationDate() {
+		return reservationDate;
 	}
 
-	public void setResDate(Date resDate) {
-		this.resDate = resDate;
+	public void setReservationDate(Date reservationDate) {
+		this.reservationDate = reservationDate;
 	}
+
+	public void setRoomId(Long roomId) {
+		this.roomId = roomId;
+	}
+
+	
 	
 	
 }
